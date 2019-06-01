@@ -19,7 +19,7 @@ import {
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {StyledListLarge, StyledList} from '../components/list'
-
+import {nothing} from '../animation/index.js'
 const {Slide, A} = Main
 // const {Slide, A, B} = Half
 
@@ -30,16 +30,12 @@ const notes = (
 )
 
 export default (
-  <Slide key={uuid()}>
+  <Slide key={uuid()} animationIn={nothing} animationOut={nothing}>
     <Plugins.Data luminave={['']} />
     {notes}
 
     <A>
-      <Title>
-        <RainbowText text="Design" />
-      </Title>
-      <br />
-      <Subtitle>Silke Voigts</Subtitle>
+      {/* <Title>Making of</Title> */}
 
       {/* <Title>
         <TextMarker>this.stage</TextMarker>
@@ -67,7 +63,7 @@ export default (
           alt=""
       /> */}
 
-      {/* <FitImage src="media/" alt="" /> */}
+      <FitImage src="media/11.png" alt="" />
     </A>
 
     {/* <B>

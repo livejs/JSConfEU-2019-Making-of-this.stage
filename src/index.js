@@ -17,6 +17,22 @@ const mySlides = [
   'cover', 
   // 'replay-the-intro', 
   'we-are-livejs',
+  'silke-design-1',
+  'silke-design-2',
+  'silke-design-3',
+  'silke-design-4',
+  'silke-design-6',
+  'silke-design-7',
+  'silke-design-9',
+  'silke-design-10',
+  'silke-design-11',
+  'silke-design-12',
+  'silke-design-13',
+  'silke-design-14',
+  'silke-design-15',
+  'silke-design-16',
+  'silke-design-17',
+  'silke-design-18',
   'take-that-never-forget',
   'sam-turns-it-into-chiptune',
   'hack-week',
@@ -28,14 +44,16 @@ const mySlides = [
   'dominator-abletonlive',
   'main-stage',
   'the-x',
+  'the-x-mapping',
   'silke-design-x',
-  'jsconfeu-projection-mapping',
+  // 'jsconfeu-projection-mapping',
   'vizra',
   'modv',
   'modv-live',
   'luminave',
   'luminave-light-mapping',
   'luminave-webusb-dmx512-controller',
+  '2xaa-remix-soundcloud',
   'thank-you'
 ]
 
@@ -61,6 +79,7 @@ const baseStyles = css`
   a {
     text-decoration: none;
     color: var(--theme-on-primary);
+    box-shadow: inset 0 -0.175em white, inset 0 -0.2em var(--theme-primary);
   }
 
   h2 {

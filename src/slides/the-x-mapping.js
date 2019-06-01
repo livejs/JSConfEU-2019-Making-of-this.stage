@@ -11,21 +11,21 @@ import {RainbowText, TextMarker} from '../components'
 import {css} from 'styled-components'
 import {Grid, Half, HalfVertical} from '../masters'
 import {ImportantLink} from '../components/links'
-import {topCenter, LargeImage, MediumImage} from '../components/images'
+import {
+  topCenter,
+  LargeImage,
+  MediumImage,
+  SmallImage
+} from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {StyledListLarge, StyledList} from '../components/list'
 
-// const {Slide, A} = Main
-const {Slide, A, B} = Half
+const {Slide, A} = Main
+// const {Slide, A, B} = Half
 
 const notes = (
   <Notes>
-    <p>We are LiveJS, a collective of audio & visual artists</p>
-    <p>
-      Most of the things you have seen is created by at least one of us using
-      JavaScript and most of the time we are doing everything live.
-    </p>
-    <p>The core crew consists of Jan, Martin, Matt, Ruth, Sam & Tim</p>
+    <p />
   </Notes>
 )
 
@@ -35,33 +35,36 @@ export default (
     {notes}
 
     <A>
-      <MediumImage src="media/live-js-heart.svg" alt="LiveJS" />
-    </A>
+      {/* <Title>Making of</Title> */}
 
-    <B>
-      <StyledList>
-        <Fragment order={1}>
-          <li>Jan Krutisch (halfbyte)</li>
-        </Fragment>
+      {/* <Title>
+        <TextMarker>this.stage</TextMarker>
+      </Title> */}
+
+      {/* <Subtitle></Subtitle> */}
+
+      {/* <StyledList>
         <Fragment order={2}>
-          <li>Martin Schuhfuss (usefulthink)</li>
+          <li></li>
         </Fragment>
         <Fragment order={3}>
-          <li>Matt McKegg (DESTROY WITH SCIENCE)</li>
+          <li></li>
         </Fragment>
         <Fragment order={4}>
-          <li>Ruth John (Rumyra)</li>
+          <li></li>
         </Fragment>
         <Fragment order={5}>
-          <li>Sam Wray (2xAA & NOSIGNAL)</li>
+          <li class="no-border"></li>
         </Fragment>
-        <Fragment order={6}>
-          <li>Silke Voigts</li>
-        </Fragment>
-        <Fragment order={7}>
-          <li class="no-border">Tim Pietrusky (NERDDISCO)</li>
-        </Fragment>
-      </StyledList>
-    </B>
+      </StyledList> */}
+
+      <MediumImage src="media/x-image.png" alt="" />
+
+      {/* <FitImage src="media/" alt="" /> */}
+    </A>
+
+    {/* <B>
+     <Title>Making of</Title>
+    </B> */}
   </Slide>
 )

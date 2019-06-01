@@ -1,6 +1,5 @@
 import {css, injectGlobal} from 'styled-components'
 
-
 export const zoom = {}
 
 zoom.in = css`
@@ -12,20 +11,25 @@ zoom.out = css`
   transform: scale3d(var(--time, 1), var(--time, 1), 1);
 `
 
+export const nothing = css``
+
 /*
  *
  * Slide
  *
  */
 export const cube = (dir = 'x') => css`
-  transform:
-    perspective(200${dir === 'x' ? 'vw' : 'vh'})
-    translate3d(0, 0, -50${dir === 'x' ? 'vw' : 'vh'})
-    rotate3d(${dir === 'x' ? 0 : 1}, ${dir === 'x' ? 1 : 0}, 0,
-             calc(90deg * var(--time) * var(--direction)))
-    translate3d(0, 0, 50${dir === 'x' ? 'vw' : 'vh'});
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
+  transform: perspective(200 ${dir === 'x' ? 'vw' : 'vh'})
+    translate3d(0, 0, -50 ${dir === 'x' ? 'vw' : 'vh'})
+    rotate3d(
+      ${dir === 'x' ? 0 : 1},
+      ${dir === 'x' ? 1 : 0},
+      0,
+      calc(90deg * var(--time) * var(--direction))
+    )
+    translate3d(0, 0, 50 ${dir === 'x' ? 'vw' : 'vh'});
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 `
 //
 // export const zoom = css`
