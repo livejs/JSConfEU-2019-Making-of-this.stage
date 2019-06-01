@@ -74,7 +74,7 @@ export default (
       <StyledList>
         <Fragment order={2}>
           <li class="no-border">
-            17 x 192x192 LED Panels, controled via a single 1080p-signal
+            17 x 192x192 LED Panels, controlled via a single 1080p-signal
           </li>
         </Fragment>
       </StyledList>
