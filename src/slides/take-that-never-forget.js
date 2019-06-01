@@ -17,7 +17,7 @@ import {
   MediumImage,
   SmallImage
 } from '../components/images'
-import {fade, flip, cube} from '@dekk/animation'
+import {fade, flip, cube, slide} from '@dekk/animation'
 import {StyledListLarge, StyledList} from '../components/list'
 
 const {Slide, A} = Main
@@ -31,7 +31,7 @@ const notes = (
 )
 
 export default (
-  <Slide key={uuid()}>
+  <Slide key={uuid()} animationIn={slide.in} animationOut={slide.out}>
     <Plugins.Data luminave={['']} />
     {notes}
 

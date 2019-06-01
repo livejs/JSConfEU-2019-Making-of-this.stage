@@ -17,7 +17,7 @@ import {
   MediumImage,
   SmallImage
 } from '../components/images'
-import {fade, flip, cube} from '@dekk/animation'
+import {fade, flip, cube, slide} from '@dekk/animation'
 import {StyledListLarge, StyledList} from '../components/list'
 
 const {Slide, A} = Main

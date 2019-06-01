@@ -30,7 +30,7 @@ const notes = (
 )
 
 export default (
-  <Slide key={uuid()} animationIn={nothing} animationOut={nothing}>
+  <Slide key={uuid()} animationOut={nothing}>
     <Plugins.Data luminave={['']} />
     {notes}
 
